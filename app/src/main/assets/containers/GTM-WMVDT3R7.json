@@ -1,0 +1,75 @@
+{
+    "exportFormatVersion": 2,
+    "exportTime": "2024-09-23 10:26:31",
+    "containerVersion": {
+        "path": "accounts/6249963358/containers/195614649/versions/0",
+        "accountId": "6249963358",
+        "containerId": "195614649",
+        "containerVersionId": "0",
+        "container": {
+            "path": "accounts/6249963358/containers/195614649",
+            "accountId": "6249963358",
+            "containerId": "195614649",
+            "name": "com.erezes.fnder",
+            "publicId": "GTM-WMVDT3R7",
+            "usageContext": [
+                "ANDROID_SDK_5"
+            ],
+            "fingerprint": "1726735252186",
+            "tagManagerUrl": "https://tagmanager.google.com/#/container/accounts/6249963358/containers/195614649/workspaces?apiLink=container",
+            "features": {
+                "supportUserPermissions": true,
+                "supportEnvironments": true,
+                "supportWorkspaces": true,
+                "supportGtagConfigs": false,
+                "supportBuiltInVariables": true,
+                "supportClients": false,
+                "supportFolders": true,
+                "supportTags": true,
+                "supportTemplates": true,
+                "supportTriggers": true,
+                "supportVariables": true,
+                "supportVersions": true,
+                "supportZones": true,
+                "supportTransformations": false
+            },
+            "tagIds": [
+                "GTM-WMVDT3R7"
+            ]
+        },
+        "builtInVariable": [
+            {
+                "accountId": "6249963358",
+                "containerId": "195614649",
+                "type": "APP_ID",
+                "name": "App ID"
+            },
+            {
+                "accountId": "6249963358",
+                "containerId": "195614649",
+                "type": "APP_NAME",
+                "name": "App Name"
+            },
+            {
+                "accountId": "6249963358",
+                "containerId": "195614649",
+                "type": "APP_VERSION_CODE",
+                "name": "App Version Code"
+            },
+            {
+                "accountId": "6249963358",
+                "containerId": "195614649",
+                "type": "APP_VERSION_NAME",
+                "name": "App Version Name"
+            },
+            {
+                "accountId": "6249963358",
+                "containerId": "195614649",
+                "type": "EVENT_NAME",
+                "name": "Event Name"
+            }
+        ],
+        "fingerprint": "1727087191071",
+        "tagManagerUrl": "https://tagmanager.google.com/#/versions/accounts/6249963358/containers/195614649/versions/0?apiLink=version"
+    }
+}

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Name">
+
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/back_button"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/writeEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="이름이 무엇인가요?"
+        app:layout_constraintStart_toStartOf="@id/backButton"
+        app:layout_constraintTop_toBottomOf="@id/backButton"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/pretendardregular"
+        android:textSize="23sp"
+        android:layout_marginStart="5dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/nameInputLayout"
+        android:layout_width="0dp"
+        android:layout_height="68dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/writeEmail"
+        app:layout_constraintWidth_percent="0.85"
+        android:layout_marginTop="30dp"
+        app:endIconMode="custom"
+        app:endIconDrawable="@drawable/x_delete"
+        android:background="@drawable/input"
+        app:hintTextColor="#818182">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/nameInput"
+            android:background="@android:color/transparent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="이름"
+            android:paddingStart="20dp"
+            android:textSize="20sp"
+            android:inputType="text"
+            android:textCursorDrawable="@drawable/cursor_color"
+            android:cursorVisible="true"
+            android:singleLine="true"
+            android:textColorHint="#818182"
+            android:textColorHighlight="#6BE2E2"
+            android:textSelectHandleLeft="@drawable/handler_color"
+            android:textSelectHandleRight="@drawable/handler_color"
+            android:textSelectHandle="@drawable/handler_color" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <android.widget.Button
+        android:id="@+id/nextButton"
+        android:background="@drawable/login_button"
+        android:layout_width="0dp"
+        android:layout_height="65dp"
+        app:layout_constraintWidth_percent="0.8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.93"
+        android:text="완료하기!"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:fontFamily="@font/pretendardbold"
+        android:stateListAnimator="@null"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

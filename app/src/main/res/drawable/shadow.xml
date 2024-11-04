@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 사각형의 배경 -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#F5F5F5"/> <!-- 사각형의 배경색 -->
+        </shape>
+    </item>
+
+    <!-- 위쪽에 그라데이션 그림자 -->
+    <item android:top="0dp">
+        <shape android:shape="rectangle">
+            <gradient
+                android:startColor="#EAEAEA"
+                android:endColor="#FAFAFA"
+                android:angle="270"/> <!-- 위쪽으로 향하는 그라데이션 -->
+            <corners android:radius="0dp"/> <!-- 모서리 둥글기 설정 -->
+        </shape>
+    </item>
+</layer-list>

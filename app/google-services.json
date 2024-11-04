@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "390290851951",
+    "project_id": "test-314e1",
+    "storage_bucket": "test-314e1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:390290851951:android:457452c98f02267143e59a",
+        "android_client_info": {
+          "package_name": "com.erezes.fnder"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCAlN3G46xplBabNi0MzW9ciq5eRENAUrc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
