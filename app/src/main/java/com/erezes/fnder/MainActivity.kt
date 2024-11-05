@@ -23,9 +23,12 @@ class MainActivity : AppCompatActivity() {
         if (accessToken != null && refreshToken != null) {
             supportFragmentManager.beginTransaction()
                 .replace(R.id.fragment_container_view_tag, Main())
-                .replace(R.id.fragment_nav_bottom, BottomNav()).commit()
+                .replace(R.id.fragment_nav_bottom, BottomNav())
+                .replace(R.id.fragment_profile_bar, ProfileBar())
+                .commit()
         } else {
-            supportFragmentManager.beginTransaction().add(R.id.fragment_container_view_tag, LogIn())
+            supportFragmentManager.beginTransaction()
+                .replace(R.id.fragment_container_view_tag, LogIn())
                 .commit()
         }
     }

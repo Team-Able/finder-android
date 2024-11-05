@@ -89,7 +89,9 @@ class LogIn : Binding<FragmentLogInBinding>() {
                             parentFragmentManager.popBackStack(null, 0)
                             parentFragmentManager.beginTransaction()
                                 .replace(R.id.fragment_container_view_tag, Main())
-                                .replace(R.id.fragment_nav_bottom, BottomNav()).commit()
+                                .replace(R.id.fragment_nav_bottom, BottomNav())
+                                .replace(R.id.fragment_profile_bar, ProfileBar())
+                                .commit()
                         } else {
                             Toast.makeText(
                                 requireContext(), "로그인 실패 ${response.code()}", Toast.LENGTH_LONG

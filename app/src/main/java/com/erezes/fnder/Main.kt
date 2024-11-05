@@ -20,13 +20,6 @@ class Main : Binding<FragmentMainBinding>() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         with(binding) {
-            profile.setOnClickListener {
-                parentFragmentManager.beginTransaction()
-                    .replace(R.id.fragment_container_view_tag, Profile())
-                    .remove(parentFragmentManager.findFragmentById(R.id.fragment_nav_bottom)!!)
-                    .addToBackStack(null)
-                    .commit()
-            }
             val slideItems = listOf(
                 SlideItem(R.drawable.banner),
                 SlideItem(R.drawable.banner),

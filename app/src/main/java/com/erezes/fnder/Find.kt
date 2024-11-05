@@ -30,14 +30,6 @@ class Find : Binding<FragmentFindBinding>() {
         val apiService = retrofit.create(ApiService::class.java)
 
         with(binding){
-            profile.setOnClickListener {
-                parentFragmentManager.beginTransaction()
-                    .replace(R.id.fragment_container_view_tag, Profile())
-                    .remove(parentFragmentManager.findFragmentById(R.id.fragment_nav_bottom)!!)
-                    .addToBackStack(null)
-                    .commit()
-            }
-
             view.setOnClickListener {
                 val imm =
                     requireActivity().getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager

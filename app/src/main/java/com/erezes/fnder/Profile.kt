@@ -63,10 +63,6 @@ class Profile : Binding<FragmentProfileBinding>() {
             backButton.setOnClickListener {
                 parentFragmentManager
                     .popBackStack()
-                parentFragmentManager
-                    .beginTransaction()
-                    .replace(R.id.fragment_nav_bottom, BottomNav())
-                    .commit()
             }
         }
     }
